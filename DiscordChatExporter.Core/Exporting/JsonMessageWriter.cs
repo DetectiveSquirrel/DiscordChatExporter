@@ -328,7 +328,7 @@ internal class JsonMessageWriter(Stream stream, ExportContext context)
         _writer.WriteEndObject();
 
         // Timestamp
-        _writer.WriteString("exportedAt", Context.NormalizeDate(DateTimeOffset.UtcNow));
+        //_writer.WriteString("exportedAt", Context.NormalizeDate(DateTimeOffset.UtcNow));
 
         // Message array (start)
         _writer.WriteStartArray("messages");
